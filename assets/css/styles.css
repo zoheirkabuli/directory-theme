@@ -415,9 +415,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
-  position: sticky;
-  position: -webkit-sticky;
+  padding: 1rem 5rem;
 }
 
 .nav__logo {
@@ -455,4 +453,18 @@ header {
 
 .nav__item > a:hover {
   color: var(--color-secondary);
+}
+
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-accent);
+  padding: 2rem;
+}
+
+.copyright {
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 1.6rem;
 }
