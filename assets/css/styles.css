@@ -540,7 +540,8 @@ a:hover {
 
 /* swiper */
 .swiper {
-  width: 90%;
+  margin-top: 2rem;
+  width: 100%;
 }
 
 .swiper-button-next,
@@ -572,4 +573,35 @@ a:hover {
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
   right: -5px;
+}
+
+/* grid categories */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.grid__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d3ae36;
+  border-radius: var(--border-radius);
+  min-height: 10rem;
+  cursor: pointer;
+}
+
+.box-two {
+  grid-column: 2/5;
+}
+
+.box-four {
+  grid-column: 2/4;
+}
+
+.box-six {
+  grid-column: 1/3;
 }
