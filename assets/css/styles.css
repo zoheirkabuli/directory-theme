@@ -538,53 +538,6 @@ a:hover {
   margin: 0;
 }
 
-/* carousel */
-
-.carousel {
-  display: flex;
-  max-width: 100%;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.carousel__cards {
-  display: flex;
-  width: 95%;
-  align-items: center;
-  justify-content: right;
-  overflow-x: auto;
-  gap: 1rem;
-}
-.carousel__cards::-webkit-scrollbar {
-  visibility: hidden;
-}
-
-.slick-arrow {
-  display: flex;
-  background: rgba(255, 255, 255, 0.932);
-  border-radius: 5px;
-  box-shadow: 0 4px 10px #0000001f;
-  padding: 0.75rem;
-  position: absolute;
-  cursor: pointer;
-  transition: 0.3s;
-  z-index: 1;
-}
-
-.slick-arrow:hover {
-  background: white;
-  box-shadow: 0 4px 20px #0000001f;
-}
-
-.slick-next {
-  left: 1rem;
-}
-
-.slick-prev {
-  right: 1rem;
-}
-
 /* swiper */
 .swiper {
   width: 90%;
