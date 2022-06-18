@@ -458,6 +458,42 @@ a:hover {
   padding: 0.5rem 2rem;
   font-weight: bold;
 }
+.nav__toggler {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    flex-wrap: wrap;
+    padding: 1rem 1rem;
+  }
+
+  .nav__list {
+    width: 100%;
+    flex-direction: column;
+    margin: 0;
+  }
+  .nav__toggler {
+    stroke: white;
+    display: block;
+  }
+  .nav__item {
+    padding: 1rem 0.5rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+  /* mobile menu */
+  .collapsible__content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+
+  .collapsible__extended .collapsible__content {
+    max-height: 100vh;
+    opacity: 1;
+  }
+}
 
 /* content */
 .content {
@@ -648,6 +684,8 @@ a:hover {
   background: #eeeeee;
   border-radius: var(--border-radius);
   overflow: hidden;
+  position: sticky;
+  top: 95px;
 }
 
 .product__image-link {
@@ -701,8 +739,6 @@ a:hover {
   .image-column {
     width: 100%;
   }
-
-
 }
 
 /* button */

@@ -20,3 +20,15 @@ const swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+// mobile menu
+
+const navs = document.querySelectorAll(".nav");
+const toggleBtn = document.querySelectorAll(".nav__toggler");
+toggleBtn.forEach((item) => {
+  item.addEventListener("click", () => {
+    navs.forEach((item) => {
+      item.classList.toggle("collapsible__extended");
+    });  
+  });
+});
