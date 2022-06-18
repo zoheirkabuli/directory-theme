@@ -23,12 +23,9 @@ const swiper = new Swiper(".mySwiper", {
 
 // mobile menu
 
-const navs = document.querySelectorAll(".nav");
-const toggleBtn = document.querySelectorAll(".nav__toggler");
-toggleBtn.forEach((item) => {
+const collapsible = document.querySelectorAll(".collapsible");
+collapsible.forEach((item) => {
   item.addEventListener("click", () => {
-    navs.forEach((item) => {
-      item.classList.toggle("collapsible__extended");
-    });  
+    item.classList.toggle("collapsible--extended");
   });
 });

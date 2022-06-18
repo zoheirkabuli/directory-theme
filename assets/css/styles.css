@@ -489,7 +489,7 @@ a:hover {
     transition: all 0.3s;
   }
 
-  .collapsible__extended .collapsible__content {
+  .collapsible--extended .collapsible__content {
     max-height: 100vh;
     opacity: 1;
   }
