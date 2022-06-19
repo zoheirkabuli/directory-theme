@@ -2,7 +2,7 @@
 feather.replace();
 
 // carousel
-const swiper = new Swiper(".mySwiper", {
+const homeSwiper = new Swiper(".carousel-product", {
   slidesPerView: 1,
   spaceBetween: 10,
   breakpoints: {
@@ -28,4 +28,18 @@ collapsible.forEach((item) => {
   item.addEventListener("click", () => {
     item.classList.toggle("collapsible--extended");
   });
+});
+
+// product gallery
+
+const productSwiper = new Swiper(".product__image-gallery", {
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+    dynamicBullets: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
