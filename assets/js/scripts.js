@@ -22,10 +22,10 @@ const homeSwiper = new Swiper(".carousel-product", {
 });
 
 // mobile menu
-
+const toggleBtn = document.querySelector(".nav__toggler");
 const collapsible = document.querySelectorAll(".collapsible");
-collapsible.forEach((item) => {
-  item.addEventListener("click", () => {
+toggleBtn.addEventListener("click", () => {
+  collapsible.forEach((item) => {
     item.classList.toggle("collapsible--extended");
   });
 });
