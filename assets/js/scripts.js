@@ -6,7 +6,7 @@ const homeSwiper = new Swiper(".carousel-product", {
   slidesPerView: 1,
   spaceBetween: 10,
   breakpoints: {
-    // when window width is >= 640px
+    // when window width is >= 768px
     768: {
       slidesPerView: 4,
       spaceBetween: 10,

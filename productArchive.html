@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- feather icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- my style -->
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <title>Product Archive</title>
+    <style></style>
+  </head>
+  <body>
+    <div class="site">
+      <header class="site-header">
+        <nav class="nav collapsible">
+          <a href="#" class="nav__logo">
+            <img
+              id="site-logo"
+              src="/assets/images/fa-logo.png"
+              alt="لوگو سایت"
+            />
+          </a>
+          <i class="icon nav__toggler" data-feather="menu"></i>
+          <ul class="list nav__list collapsible__content">
+            <li class="nav__item"><a href="index.html">خانه</a></li>
+            <li class="nav__item"><a href="product.html">محصول</a></li>
+            <li class="nav__item"><a href="productArchive.html">محصولات</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="content">
+        <div class="pa-container">
+          <aside class="pa__sidebar">
+            <div class="pa__sidebar-filters">
+              <div class="pa__sidebar-block">
+                <p class="pa__sidebar-categories-title">دسته‌بندی ها</p>
+                <a href="#" class="pa__sidebar-category-link">
+                  <p class="pa__sidebar-category">هندوانه</p>
+                  <i class="icon" data-feather="arrow-left"></i>
+                </a>
+                <a href="#" class="pa__sidebar-category-link">
+                  <p class="pa__sidebar-category">هندوانه</p>
+                  <i class="icon" data-feather="arrow-left"></i>
+                </a>
+                <a href="#" class="pa__sidebar-category-link">
+                  <p class="pa__sidebar-category">هندوانه</p>
+                  <i class="icon" data-feather="arrow-left"></i>
+                </a>
+              </div>
+            </div>
+          </aside>
+          <div class="pa__content">
+            <div class="pa__sort">
+              <p class="pa__sort-text">مرتب سازی بر اساس :</p>
+            </div>
+            <div class="pa__cards">
+              <div class="card">
+                <header class="card__header">
+                  <a class="card__image-link" href="product.html"
+                    ><img class="card__image" src="assets/images/photo.jpg"
+                  /></a>
+                </header>
+                <div class="card__body">
+                  <a class="card__title-link" href="product.html">
+                    <p class="card__title">
+                      ۱ گردو و فندق و شکلات و همه جیز های خوراکی
+                    </p>
+                  </a>
+                  <div class="card__info">
+                    <i class="icon" data-feather="package"></i>
+                    <p class="card__inventory-text">۱۲۳ تن</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="site-footer">
+          <div class="copyright">
+            تمام حقوق این سایت برای آراد برندینگ محفوظ است.
+          </div>
+        </div>
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <!--  -->
+        <script type="text/javascript" src="/assets/js/scripts.js"></script>
+
+        <script>
+          const card = document.querySelector(".card");
+          for (let index = 0; index < 19; index++) {
+            const clone = card.cloneNode(true);
+            document.querySelector(".pa__cards").appendChild(clone);
+          }
+        </script>
+      </footer>
+    </div>
+  </body>
+</html>
