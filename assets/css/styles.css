@@ -497,11 +497,13 @@ p {
 
 /* content */
 .content {
-  padding: 2rem 0rem;
   width: 85%;
-  margin: 0 auto;
+  margin: 2rem auto;
   min-height: 82vh;
   max-width: 1336px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -543,6 +545,10 @@ a:hover {
 }
 
 /* Home Css */
+
+.home-container {
+  max-width: 100%;
+}
 
 /* Card */
 
@@ -734,6 +740,7 @@ a:hover {
 .product {
   display: flex;
   gap: 2rem;
+  max-width: 100%;
 }
 
 .product__content-column {
@@ -841,6 +848,7 @@ a:hover {
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 3rem;
+  max-width: 100%;
 }
 
 .pa__sidebar {
@@ -899,6 +907,32 @@ a:hover {
   margin: 0;
 }
 
+.pa__pagination {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.pa__pagination a {
+  border-radius: 5px;
+  border: 1px solid;
+  padding: 0.2rem 0.9rem;
+  transition: all 0.3s ease-out;
+}
+
+.pa__pagination a:hover {
+  color: white;
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+}
+.active a {
+  color: white;
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
 @media screen and (max-width: 768px) {
   .pa__sidebar {
     display: none;
@@ -910,4 +944,27 @@ a:hover {
   .pa__cards {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+/* posts single */
+
+.post-container {
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  width: 70%;
+}
+
+.post-title {
+  margin: 2rem;
+  font-weight: 900;
+}
+
+.post-featured-img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.post-content {
+  margin: 2rem;
 }
