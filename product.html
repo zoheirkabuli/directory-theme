@@ -69,7 +69,7 @@
               <a href="#" class="btn btn--primary">استعلام قیمت</a>
             </div>
             <div class="product-Description">
-              <h2 class="product-Description__title">توضیحات</h2>
+              <!-- <h2 class="product-Description__title">توضیحات</h2>
               <p class="product-Description__content">
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
                 استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
@@ -82,7 +82,31 @@
                 دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد
                 وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات
                 پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
-              </p>
+              </p> -->
+              <div class="tab">
+                <button
+                  class="tablinks"
+                  onclick="openCity(event, 'product-details')"
+                >
+                  جزئیات محصول
+                </button>
+                <button
+                  class="tablinks"
+                  onclick="openCity(event, 'company-profile')"
+                >
+                  کمپانی پروفایل
+                </button>
+              </div>
+
+              <div id="product-details" class="tabcontent">
+                <h3>London</h3>
+                <p>London is the capital city of England.</p>
+              </div>
+
+              <div id="company-profile" class="tabcontent">
+                <h3>Paris</h3>
+                <p>Paris is the capital of France.</p>
+              </div>
             </div>
           </div>
           <div class="product__image-column">

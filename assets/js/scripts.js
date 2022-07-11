@@ -43,3 +43,21 @@ const productSwiper = new Swiper(".product__image-gallery", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+// Tabs
+document.getElementsByClassName("tablinks")[0].className += " active";
+document.getElementById("product-details").style.display = "block";
+
+function openCity(evt, cityName) {
+  let i, tabContent, tabLinks;
+  tabContent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabContent.length; i++) {
+    tabContent[i].style.display = "none";
+  }
+  tabLinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tabLinks.length; i++) {
+    tabLinks[i].className = tabLinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
