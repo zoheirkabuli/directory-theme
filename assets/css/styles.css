@@ -943,13 +943,16 @@ a:hover {
   padding-bottom: 1rem;
 }
 
-.pa__sidebar-category-link {
-  display: flex;
-  justify-content: space-between;
+li > .children {
+  list-style: none;
+  padding: 0 2rem;
+  padding-inline-end: 0 !important;
 }
 
-.pa__sidebar-category-link:last-child > .pa__sidebar-category {
-  margin: 0;
+.cat-item__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .pa__pagination {
