@@ -807,6 +807,22 @@ a:hover {
   gap: 0.5rem;
 }
 
+.product-price {
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.price-card {
+  padding: 1.5rem;
+  white-space: nowrap;
+  width: calc(25% - 1rem);
+}
+
+.price-card:nth-child(odd) {
+  background: #f6f6f6;
+  border-radius: var(--border-radius);
+}
+
 .product-btn {
   display: flex;
   align-items: center;
@@ -858,7 +874,7 @@ a:hover {
 
 @media screen and (max-width: 768px) {
   .product {
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 0;
   }
   .product__content-column {
@@ -867,6 +883,18 @@ a:hover {
 
   .product__image-column {
     width: 100%;
+  }
+
+  .product-info__price-item {
+    overflow-x: auto;
+  }
+
+  .product-price {
+    flex-wrap: nowrap;
+  }
+
+  .price-card {
+    white-space: nowrap;
   }
 }
 
