@@ -797,7 +797,7 @@ a:hover {
   padding: 1rem;
 }
 
-.product-info__item:nth-child(odd) {
+.product-info__item:nth-child(even) {
   background: #f6f6f6;
   border-radius: var(--border-radius);
 }
@@ -829,19 +829,19 @@ a:hover {
   justify-content: center;
 }
 
-.product-Description {
+.product-desc {
   margin: 1rem 0;
 }
 
 /* product tabs */
 /* Style the tab */
-.tab {
+.product-desc__tabs {
   overflow: hidden;
   margin-bottom: -1px;
 }
 
 /* Style the buttons inside the tab */
-.tablinks {
+.product-desc__tab-btn {
   background-color: #ccc;
   border: none;
   outline: none;
@@ -855,21 +855,39 @@ a:hover {
 }
 
 /* Change background color of buttons on hover */
-.tab button:hover {
+.product-desc__tabs button:hover {
   background-color: #ddd;
 }
 
 /* Create an active/current tablink class */
-.tablinks.active {
+.product-desc__tab-btn.active {
   background-color: white;
 }
 
 /* Style the tab content */
-.tabcontent {
+.product-desc__tab-content {
   display: none;
-  padding: 6px 12px;
+  padding: 1.5rem;
   border: 1px solid #ccc;
   border-radius: 10px 0 10px 10px;
+}
+
+/* Company Profile Table */
+
+.company-profile-table {
+  font-size: 1.3rem;
+  border-collapse: collapse;
+}
+
+.company-profile-table td {
+  width: 25%;
+  border: 1px solid var(--color-border);
+  padding: 1rem;
+}
+
+.company-profile-table tr > td:nth-child(odd) {
+  font-weight: bold;
+  background-color: #f6f6f6;
 }
 
 @media screen and (max-width: 768px) {

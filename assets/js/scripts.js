@@ -45,16 +45,17 @@ const productSwiper = new Swiper(".product__image-gallery", {
 });
 
 // Tabs
-document.getElementsByClassName("tablinks")[0].className += " active";
+document.getElementsByClassName("product-desc__tab-btn")[0].className +=
+  " active";
 document.getElementById("product-details").style.display = "block";
 
 function openCity(evt, cityName) {
   let i, tabContent, tabLinks;
-  tabContent = document.getElementsByClassName("tabcontent");
+  tabContent = document.getElementsByClassName("product-desc__tab-content");
   for (i = 0; i < tabContent.length; i++) {
     tabContent[i].style.display = "none";
   }
-  tabLinks = document.getElementsByClassName("tablinks");
+  tabLinks = document.getElementsByClassName("product-desc__tab-btn");
   for (i = 0; i < tabLinks.length; i++) {
     tabLinks[i].className = tabLinks[i].className.replace(" active", "");
   }

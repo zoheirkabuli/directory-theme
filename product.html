@@ -101,11 +101,6 @@
             <h1 class="product-title">گردو</h1>
             <div class="product-info">
               <ul class="list product-info__list">
-                <li class="product-info__item">
-                  <span><i class="icon" data-feather="package"></i> موجودی</span
-                  ><span>۲۰ تن</span>
-                </li>
-
                 <li class="product-info__item product-info__price-item">
                   <div class="product-price">
                     <div class="price-card">
@@ -134,34 +129,38 @@
                     </div>
                   </div>
                 </li>
+                <li class="product-info__item">
+                  <span><i class="icon" data-feather="package"></i> موجودی</span
+                  ><span>۲۰ تن</span>
+                </li>
               </ul>
             </div>
             <div class="product-btn">
               <a href="#" class="btn btn--primary">استعلام قیمت</a>
             </div>
-            <div class="product-Description">
-              <div class="tab">
+            <div class="product-desc">
+              <div class="product-desc__tabs">
                 <button
-                  class="tablinks"
+                  class="product-desc__tab-btn"
                   onclick="openCity(event, 'product-details')"
                 >
                   جزئیات محصول
                 </button>
                 <button
-                  class="tablinks"
+                  class="product-desc__tab-btn"
                   onclick="openCity(event, 'company-profile')"
                 >
                   کمپانی پروفایل
                 </button>
               </div>
 
-              <div id="product-details" class="tabcontent">
+              <div id="product-details" class="product-desc__tab-content">
                 <h3>London</h3>
                 <p>London is the capital city of England.</p>
               </div>
 
-              <div id="company-profile" class="tabcontent">
-                <table>
+              <div id="company-profile" class="product-desc__tab-content">
+                <table class="company-profile-table">
                   <tr>
                     <td>Business Type</td>
                     <td>Trading Company</td>
